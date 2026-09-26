@@ -1,0 +1,11 @@
+interface:
+  display_name: "Mermail API Change Readiness Desk"
+  short_description: "Turn vendor API-change notices into an evidence-backed readiness brief"
+  default_prompt: "Use $mermail-api-change-readiness to analyze selected vendor API-change notices, resolve any corrected effective date, and return a read-only change readiness brief."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "mermail"
+      description: "Mermail workspace and mailbox MCP server"
+      transport: "streamable_http"
+      url: "https://console.mermail.app/mcp"
